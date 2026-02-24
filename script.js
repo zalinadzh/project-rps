@@ -21,6 +21,7 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
+    computerChoice.toLowerCase();
     if (humanChoice === computerChoice) {
         console.log("It's a tie! both chose " + humanChoice);
     } else if (
@@ -35,7 +36,10 @@ function playRound(humanChoice, computerChoice) {
         console.log("You lose! " + computerChoice + " beats " + humanChoice);
     }
 }
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
+playRound(humanSelection, computerSelection);
 
 
 
