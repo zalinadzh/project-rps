@@ -1,8 +1,8 @@
 function getComputerChoice() {
-    let choice = Math.random();
-    if (choice < 0.33) {
+    const choice = Math.random();
+    if (choice < 1 / 3) {
         return "rock";
-    } else if (choice < 0.66) {
+    } else if (choice < 2 / 3) {
         return "paper";
     } else {
         return "scissors";
@@ -10,12 +10,77 @@ function getComputerChoice() {
 }
 console.log(getComputerChoice());
 
-
 function getHumanChoice() {
-    let choice = prompt("Enter rock, paper, or scissors:");
-    return choice.toLowerCase();
+ let choice = prompt("Введите ваш выбор: rock, paper или scissors");
+ return choice;
 }
+console.log(getHumanChoice());
+
+let humanScore = 0;
+let computerScore = 0;
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
